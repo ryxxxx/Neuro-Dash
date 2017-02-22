@@ -1,0 +1,2149 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui.cpp</FILENAME>
+      <LINE>2538</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6340</DEFECTCODE>
+    <DESCRIPTION>Vorzeichenkonflikt: "const bool" wird als _Param_(3) übergeben, wenn ein signed-Typ im Aufruf von "fprintf" erforderlich ist.</DESCRIPTION>
+    <FUNCTION>SaveIniSettingsToDisk</FUNCTION>
+    <DECORATED>?SaveIniSettingsToDisk@@YAXPBD@Z</DECORATED>
+    <FUNCLINE>2503</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui.cpp</FILENAME>
+      <LINE>9077</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Rückgabewert wird ignoriert: "sscanf".</DESCRIPTION>
+    <FUNCTION>ImGui::ColorEdit4</FUNCTION>
+    <DECORATED>?ColorEdit4@ImGui@@YA_NPBDQAM_N@Z</DECORATED>
+    <FUNCLINE>8997</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui.cpp</FILENAME>
+      <LINE>9079</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Rückgabewert wird ignoriert: "sscanf".</DESCRIPTION>
+    <FUNCTION>ImGui::ColorEdit4</FUNCTION>
+    <DECORATED>?ColorEdit4@ImGui@@YA_NPBDQAM_N@Z</DECORATED>
+    <FUNCLINE>8997</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui.cpp</FILENAME>
+      <LINE>9100</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Lesen ungültiger Daten von "button_titles":  die lesbare Größe beträgt "12" Byte, es können jedoch "edit_mode" Byte gelesen werden.</DESCRIPTION>
+    <FUNCTION>ImGui::ColorEdit4</FUNCTION>
+    <DECORATED>?ColorEdit4@ImGui@@YA_NPBDQAM_N@Z</DECORATED>
+    <FUNCLINE>8997</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>8999</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9000</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9003</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9004</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9005</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9006</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9007</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9009</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9010</LINE>
+        <COLUMN>51</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9013</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9014</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9017</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9019</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9020</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9022</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9023</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9025</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9026</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9086</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9088</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9089</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9093</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9096</LINE>
+        <COLUMN>33</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"edit_mode" kann gleich -1 sein.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9098</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9099</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"button_titles" ist ein Array von 3 Elementen (12 Byte)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9100</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"button_titles" ist eine Ausgabe von "ImGui::ButtonEx" (in f:\code\c++\imgui\imgui_internal.h:742 deklariert)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui.cpp</FILENAME>
+        <LINE>9100</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Ungültiger Lesevorgang von "button_titles[-1]" (der lesbare Bereich ist 0 bis 2)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui_demo.cpp</FILENAME>
+      <LINE>1755</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Dereferenzierender NULL-Zeiger "font-&gt;ConfigData". </DESCRIPTION>
+    <FUNCTION>ImGui::ShowStyleEditor</FUNCTION>
+    <DECORATED>?ShowStyleEditor@ImGui@@YAXPAUImGuiStyle@@@Z</DECORATED>
+    <FUNCLINE>1620</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1622</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1625</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1626</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1629</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1636</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1638</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1650</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1671</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1728</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1730</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1730</LINE>
+        <COLUMN>41</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1731</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1732</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1737</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1738</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1738</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1740</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1741</LINE>
+        <COLUMN>29</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"font-&gt;ConfigData" kann NULL sein.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1742</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1743</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1743</LINE>
+        <COLUMN>53</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1744</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1745</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1746</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1747</LINE>
+        <COLUMN>31</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Verzweigung eintreten (Annahme: "TreeNode("Details")")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1749</LINE>
+        <COLUMN>32</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1750</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1750</LINE>
+        <COLUMN>49</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1751</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1752</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1753</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1753</LINE>
+        <COLUMN>48</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Schleife eintreten (Annahme: "config_i&lt;font-&gt;ConfigDataCount")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>1755</LINE>
+        <COLUMN>32</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"font-&gt;ConfigData" wird dereferenziert, kann jedoch weiterhin NULL sein.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui_demo.cpp</FILENAME>
+      <LINE>2116</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Nicht initialisierter Speicher "*History[](i)" wird verwendet.</DESCRIPTION>
+    <FUNCTION>ExampleAppConsole::{dtor}</FUNCTION>
+    <DECORATED>??1ExampleAppConsole@@QAE@XZ</DECORATED>
+    <FUNCLINE>2112</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2114</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2115</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2115</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2116</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2115</LINE>
+        <COLUMN>43</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2115</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2116</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"*History[](i)" ist nicht initialisiert</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2116</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"*History[](i)" wird verwendet, wurde jedoch möglicherweise nicht initialisiert.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui_demo.cpp</FILENAME>
+      <LINE>2122</LINE>
+      <COLUMN>127</COLUMN>
+    </SFA>
+    <DEFECTCODE>6387</DEFECTCODE>
+    <DESCRIPTION>"buff" könnte "0" sein:  dies entspricht nicht der Spezifikation für Funktion "memcpy". </DESCRIPTION>
+    <FUNCTION>ExampleAppConsole::Strdup</FUNCTION>
+    <DECORATED>?Strdup@ExampleAppConsole@@SAPADPBD@Z</DECORATED>
+    <FUNCLINE>2122</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2122</LINE>
+        <COLUMN>78</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2122</LINE>
+        <COLUMN>105</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"buff" kann NULL sein.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2122</LINE>
+        <COLUMN>127</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buff" ist ein Eingabe-/Ausgabeargument für "memcpy" (in f:\programme\visual studio\vc\include\vcruntime_string.h:40 deklariert)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2122</LINE>
+        <COLUMN>127</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"buff" sollte nicht NULL sein, da dies nicht der SAL-Anmerkung zu "memcpy" entspricht.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui_demo.cpp</FILENAME>
+      <LINE>2127</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Nicht initialisierter Speicher "*Items[](i)" wird verwendet.</DESCRIPTION>
+    <FUNCTION>ExampleAppConsole::ClearLog</FUNCTION>
+    <DECORATED>?ClearLog@ExampleAppConsole@@QAEXXZ</DECORATED>
+    <FUNCLINE>2124</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2126</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2126</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2127</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2126</LINE>
+        <COLUMN>41</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2126</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2127</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"*Items[](i)" ist nicht initialisiert</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_demo.cpp</FILENAME>
+        <LINE>2127</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"*Items[](i)" wird verwendet, wurde jedoch möglicherweise nicht initialisiert.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+      <FILENAME>stb_truetype.h</FILENAME>
+      <LINE>3491</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Lesen ungültiger Daten von "buffer":  die lesbare Größe beträgt "_Old_3`kernel_width" Byte, es können jedoch "3" Byte gelesen werden.</DESCRIPTION>
+    <FUNCTION>stbtt__h_prefilter</FUNCTION>
+    <DECORATED>?stbtt__h_prefilter@@YAXPAEHHHI@Z</DECORATED>
+    <FUNCLINE>3437</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3439</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"buffer" ist ein Array mit 8 Byte.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3440</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3441</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3442</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buffer" ist eine Ausgabe von "memset" (in f:\programme\visual studio\vc\include\vcruntime_string.h:60 deklariert)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3443</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3443</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Schleife eintreten (Annahme: "j&lt;h")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3444</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3445</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3446</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buffer" ist eine Ausgabe von "memset" (in f:\programme\visual studio\vc\include\vcruntime_string.h:60 deklariert)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3448</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3451</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Annahme, der Schalter ("kernel_width") wird zu case 2:  aufgelöst</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3452</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3453</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3453</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3454</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3455</LINE>
+        <COLUMN>59</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3456</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3453</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3453</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3489</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Schleife eintreten (Annahme: "i&lt;w")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3490</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Schleife eintreten (Annahme: "!!((pixels[i]==0))")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3491</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3492</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3489</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3489</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Diese Schleife fortsetzen (Annahme: "i&lt;w")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3490</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Diese Schleife fortsetzen (Annahme: "!!((pixels[i]==0))")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3491</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>10</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Ungültiger Lesevorgang von "buffer[2]" (der lesbare Bereich ist 0 bis 1)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+      <FILENAME>stb_truetype.h</FILENAME>
+      <LINE>3553</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Lesen ungültiger Daten von "buffer":  die lesbare Größe beträgt "_Old_3`kernel_width" Byte, es können jedoch "3" Byte gelesen werden.</DESCRIPTION>
+    <FUNCTION>stbtt__v_prefilter</FUNCTION>
+    <DECORATED>?stbtt__v_prefilter@@YAXPAEHHHI@Z</DECORATED>
+    <FUNCLINE>3499</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3501</LINE>
+        <COLUMN>17</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"buffer" ist ein Array mit 8 Byte.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3502</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3503</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3504</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buffer" ist eine Ausgabe von "memset" (in f:\programme\visual studio\vc\include\vcruntime_string.h:60 deklariert)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3505</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3505</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Schleife eintreten (Annahme: "j&lt;w")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3506</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3507</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3508</LINE>
+        <COLUMN>18</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"buffer" ist eine Ausgabe von "memset" (in f:\programme\visual studio\vc\include\vcruntime_string.h:60 deklariert)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3510</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3513</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Annahme, der Schalter ("kernel_width") wird zu case 2:  aufgelöst</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3514</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3515</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3515</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3516</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3517</LINE>
+        <COLUMN>59</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3518</LINE>
+        <COLUMN>41</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3515</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3515</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3551</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Schleife eintreten (Annahme: "i&lt;h")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3552</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Schleife eintreten (Annahme: "&lt;Verzweigungsbedingung&gt;")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3553</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3554</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3551</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3551</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Diese Schleife fortsetzen (Annahme: "i&lt;h")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3552</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Diese Schleife fortsetzen (Annahme: "&lt;Verzweigungsbedingung&gt;")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\imgui\</FILEPATH>
+        <FILENAME>stb_truetype.h</FILENAME>
+        <LINE>3553</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>10</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Ungültiger Lesevorgang von "buffer[2]" (der lesbare Bereich ist 0 bis 1)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui_draw.cpp</FILENAME>
+      <LINE>442</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>6255</DEFECTCODE>
+    <DESCRIPTION>_alloca kennzeichnet Fehler durch Auslösen einer Stapelüberlaufausnahme. Verwenden Sie stattdessen _malloca.</DESCRIPTION>
+    <FUNCTION>ImDrawList::AddPolyline</FUNCTION>
+    <DECORATED>?AddPolyline@ImDrawList@@QAEXPBUImVec2@@HI_NM1@Z</DECORATED>
+    <FUNCLINE>417</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui_draw.cpp</FILENAME>
+      <LINE>623</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>6255</DEFECTCODE>
+    <DESCRIPTION>_alloca kennzeichnet Fehler durch Auslösen einer Stapelüberlaufausnahme. Verwenden Sie stattdessen _malloca.</DESCRIPTION>
+    <FUNCTION>ImDrawList::AddConvexPolyFilled</FUNCTION>
+    <DECORATED>?AddConvexPolyFilled@ImDrawList@@QAEXPBUImVec2@@HI_N@Z</DECORATED>
+    <FUNCLINE>598</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui_draw.cpp</FILENAME>
+      <LINE>630</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Pufferüberlauf beim Schreiben nach "temp_normals":  die schreibbare Größe beträgt "points_count*sizeof(ImVec2)" Byte, es können jedoch "16" Byte geschrieben werden.</DESCRIPTION>
+    <FUNCTION>ImDrawList::AddConvexPolyFilled</FUNCTION>
+    <DECORATED>?AddConvexPolyFilled@ImDrawList@@QAEXPBUImVec2@@HI_N@Z</DECORATED>
+    <FUNCLINE>598</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>600</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>601</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>604</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>607</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>608</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>609</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>610</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>611</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>614</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>615</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>616</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>616</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>623</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"temp_normals" ist ein Array mit 0 Byte.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>49</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Schleife eintreten (Annahme: "i1&lt;points_count")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>626</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>627</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>628</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>629</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>630</LINE>
+        <COLUMN>31</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Ungültiger Schreibvorgang nach "temp_normals" (außerhalb des schreibbaren Bereichs)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+      <FILENAME>imgui_draw.cpp</FILENAME>
+      <LINE>637</LINE>
+      <COLUMN>24</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Lesen ungültiger Daten von "temp_normals":  die lesbare Größe beträgt "points_count*sizeof(ImVec2)" Byte, es können jedoch "16" Byte gelesen werden.</DESCRIPTION>
+    <FUNCTION>ImDrawList::AddConvexPolyFilled</FUNCTION>
+    <DECORATED>?AddConvexPolyFilled@ImDrawList@@QAEXPBUImVec2@@HI_N@Z</DECORATED>
+    <FUNCLINE>598</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>600</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>601</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>604</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>607</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>608</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>609</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>610</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>611</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>614</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>615</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>616</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>616</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>623</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"temp_normals" ist ein Array mit 0 Byte.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>49</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>626</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>627</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>628</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>629</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>630</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>631</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>68</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>49</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>626</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>627</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>628</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>629</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>630</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>631</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>68</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>624</LINE>
+        <COLUMN>49</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>634</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>634</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>634</LINE>
+        <COLUMN>49</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Schleife eintreten (Annahme: "i1&lt;points_count")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\imgui\</FILEPATH>
+        <FILENAME>imgui_draw.cpp</FILENAME>
+        <LINE>637</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Ungültiger Lesevorgang von "temp_normals" (außerhalb des lesbaren Bereichs)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+      <FILENAME>population.cpp</FILENAME>
+      <LINE>123</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>Die lokale Deklaration von "champion" blendet die Deklaration des gleichen Namens im äußeren Bereich aus. Weitere Informationen finden Sie in der früheren Deklaration in Zeile "82" von "f:\code\c++\neuro dash\neuro dash\neat\population.cpp".</DESCRIPTION>
+    <FUNCTION>NEAT::Population::stepGeneration</FUNCTION>
+    <DECORATED>?stepGeneration@Population@NEAT@@QAEX_N@Z</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+      <FILENAME>population.cpp</FILENAME>
+      <LINE>157</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Dereferenzierender NULL-Zeiger "champion". </DESCRIPTION>
+    <FUNCTION>NEAT::Population::stepGeneration</FUNCTION>
+    <DECORATED>?stepGeneration@Population@NEAT@@QAEX_N@Z</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>71</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>76</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>76</LINE>
+        <COLUMN>35</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>76</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>79</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>81</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>83</LINE>
+        <COLUMN>31</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>83</LINE>
+        <COLUMN>54</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>102</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>102</LINE>
+        <COLUMN>63</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>112</LINE>
+        <COLUMN>4</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>118</LINE>
+        <COLUMN>38</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>119</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>121</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>122</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>123</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"champion" ist NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>124</LINE>
+        <COLUMN>32</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>125</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Diese Schleife überspringen (Annahme: "it2!=(it*()-&gt;end())" ist false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>135</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>136</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Diese Verzweigung überspringen (Annahme: "verbose" ist false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>141</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>145</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>148</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>156</LINE>
+        <COLUMN>13</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>In diese Verzweigung eintreten (Annahme: "nextGen&gt;0")</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\neat\</FILEPATH>
+        <FILENAME>population.cpp</FILENAME>
+        <LINE>157</LINE>
+        <COLUMN>25</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"champion" wird dereferenziert, kann jedoch weiterhin NULL sein.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>11140</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Dereferenzierender NULL-Zeiger "var". </DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_parser::parse_primary_expression</FUNCTION>
+    <DECORATED>?parse_primary_expression@xpath_parser@?A0x5f71f2c5@impl@pugi@@QAEPAVxpath_ast_node@234@XZ</DECORATED>
+    <FUNCLINE>11120</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11122</LINE>
+        <COLUMN>25</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11124</LINE>
+        <COLUMN>3</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11126</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11128</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11131</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11132</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11135</LINE>
+        <COLUMN>8</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>verzweigen</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"var" kann NULL sein. (In diese Verzweigung eintreten)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11136</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11138</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11140</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>Deklaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>"var" ist ein Eingabe-/Ausgabeargument für "pugi::impl::`anonymous-namespace'::xpath_ast_node::{ctor}" (in Zeile 9989 deklariert)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+        <FILENAME>pugixml.cpp</FILENAME>
+        <LINE>11140</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>Verwendung</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>"var" wird dereferenziert, kann jedoch weiterhin NULL sein.</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9920</LINE>
+      <COLUMN>42</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@ABVxpath_node@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9917</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9920</LINE>
+      <COLUMN>67</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@ABVxpath_node@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9917</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9920</LINE>
+      <COLUMN>100</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@ABVxpath_node@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9917</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9920</LINE>
+      <COLUMN>135</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@ABVxpath_node@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9917</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9920</LINE>
+      <COLUMN>161</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@ABVxpath_node@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9917</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9920</LINE>
+      <COLUMN>184</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@ABVxpath_node@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9917</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9920</LINE>
+      <COLUMN>210</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@ABVxpath_node@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9917</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9647</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@PAUxml_node_struct@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9643</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9670</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@PAUxml_node_struct@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9643</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9799</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@PAUxml_node_struct@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9643</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9840</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@PAUxml_attribute_struct@3@PAUxml_node_struct@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9836</FUNCLINE>
+    <PATH />
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>f:\code\c++\neuro dash\neuro dash\pugixml\</FILEPATH>
+      <FILENAME>pugixml.cpp</FILENAME>
+      <LINE>9845</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6326</DEFECTCODE>
+    <DESCRIPTION>Potenzieller Vergleich einer Konstanten mit einer anderen Konstanten.</DESCRIPTION>
+    <FUNCTION>pugi::impl::`anonymous-namespace'::xpath_ast_node::step_fill</FUNCTION>
+    <DECORATED>??$step_fill@U?$axis_to_type@$0A@@?A0x5f71f2c5@impl@pugi@@@xpath_ast_node@?A0x5f71f2c5@impl@pugi@@AAEXAAVxpath_node_set_raw@123@PAUxml_attribute_struct@3@PAUxml_node_struct@3@PAVxpath_allocator@123@_NU?$axis_to_type@$0A@@123@@Z</DECORATED>
+    <FUNCLINE>9836</FUNCLINE>
+    <PATH />
+  </DEFECT></DEFECTS>
