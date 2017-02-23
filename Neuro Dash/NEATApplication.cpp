@@ -10,7 +10,7 @@ void NEATApplication::run()
 	game.setPopulation(population, &actors);
 
 	game.loadLevel("testmap.tmx");
-	window.create(sf::VideoMode(980, 532), "Neuro Dash", sf::Style::Close);
+	window.create(sf::VideoMode(1500, 900), "Neuro Dash", sf::Style::Close);
 
 	ImGui::SFML::Init(window);
 
@@ -93,10 +93,6 @@ void NEATApplication::updateGame()
 		if (pauseOnFinish)
 		{
 			pauseGame(true);
-		}
-		else
-		{
-			game.restartLevel(true);
 		}
 		game.setDone(false);
 	}

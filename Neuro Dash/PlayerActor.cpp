@@ -19,7 +19,7 @@ float PlayerActor::getFitness()
 	{
 		fitness = player->getPlayerPos().x;
 		if (player->isFinished())
-			fitness += 1000;
+			fitness += 100;
 	}
 	return fitness;
 }
