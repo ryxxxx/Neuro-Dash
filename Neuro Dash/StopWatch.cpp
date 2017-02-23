@@ -1,13 +1,5 @@
 #include "StopWatch.h"
 
-StopWatch::StopWatch()
-{
-}
-
-StopWatch::~StopWatch()
-{
-}
-
 float StopWatch::getTime()
 {
 	if (paused)

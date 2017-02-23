@@ -4,8 +4,8 @@
 class StopWatch
 {
 public:
-	StopWatch();
-	~StopWatch();
+	StopWatch() {};
+	~StopWatch() {};
 
 	void stop();
 	void start();
@@ -17,4 +17,3 @@ private:
 	float timeBuffer = 0.f;
 	bool paused = true;
 };
-

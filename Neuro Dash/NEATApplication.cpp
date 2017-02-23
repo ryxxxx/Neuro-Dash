@@ -152,18 +152,18 @@ void NEATApplication::handleGui()
 	}
 	if (ImGui::BeginPopup("Save population"))
 	{
-		ImGui::InputText("File Name", savePopulationString, 256);
+		ImGui::InputText("File Name", imguiSavePopulation, 256);
 		if (ImGui::Button("Cancel"))
 		{
 			ImGui::CloseCurrentPopup();
-			strcpy_s(savePopulationString, "");
+			strcpy_s(imguiSavePopulation, "");
 		}
 		ImGui::SameLine();
 		if (ImGui::Button("Save"))
 		{
-			population->saveNetworks(savePopulationString);
+			population->saveNetworks(imguiSavePopulation);
 			ImGui::CloseCurrentPopup();
-			strcpy_s(savePopulationString, "");
+			strcpy_s(imguiSavePopulation, "");
 		}
 
 		ImGui::EndPopup();
@@ -175,23 +175,18 @@ void NEATApplication::handleGui()
 	}
 	if (ImGui::BeginPopup("Load population"))
 	{
-		ImGui::InputText("File Name", loadPopulationString, 256);
+		ImGui::InputText("File Name", imguiLoadPopulation, 256);
 		if (ImGui::Button("Cancel"))
 		{
 			ImGui::CloseCurrentPopup();
-			strcpy_s(loadPopulationString, "");
+			strcpy_s(imguiLoadPopulation, "");
 		}
 		ImGui::SameLine();
 		if (ImGui::Button("Load"))
 		{
-			pugi::xml_document doc;
-			doc.load_file(loadPopulationString);
-			createPopulation(doc.child("population").attribute("nnetworkCount").as_int());
-			population->loadNetworks(loadPopulationString);
-			game.setPopulation(population, &actors);
-			game.restartLevel(false);
+			loadPopulation(imguiLoadPopulation);
 			ImGui::CloseCurrentPopup();
-			strcpy_s(loadPopulationString, "");
+			strcpy_s(imguiLoadPopulation, "");
 		}
 		ImGui::EndPopup();
 	}
@@ -202,27 +197,27 @@ void NEATApplication::handleGui()
 	}
 	if (ImGui::BeginPopup("Reset population"))
 	{
-		ImGui::InputInt("Population size", &resetPopulationInt);
-		if (resetPopulationInt <= 3)
-			resetPopulationInt = 4;
-		if (resetPopulationInt >= 1000)
-			resetPopulationInt = 999;
+		ImGui::InputInt("Population size", &imguiResetPopulation);
+		if (imguiResetPopulation <= 3)
+			imguiResetPopulation = 4;
+		if (imguiResetPopulation >= 1000)
+			imguiResetPopulation = 999;
 		if (ImGui::Button("Cancel"))
 		{
 			ImGui::CloseCurrentPopup();
-			resetPopulationInt = 0;
+			imguiResetPopulation = 0;
 		}
 		ImGui::SameLine();
 		if (ImGui::Button("Reset"))
 		{
-			createPopulation(resetPopulationInt);
+			createPopulation(imguiResetPopulation);
 			game.setPopulation(population, &actors);
 			game.restartLevel(false);
 			ImGui::CloseCurrentPopup();
 			timeSinceExperimentStarted.reset();
 			if (!paused)
 				timeSinceExperimentStarted.start();
-			resetPopulationInt = 0;
+			imguiResetPopulation = 0;
 		}
 		ImGui::EndPopup();
 	}
@@ -232,17 +227,93 @@ void NEATApplication::handleGui()
 	}
 	if (ImGui::BeginPopup("Load level"))
 	{
-		ImGui::InputText("File Name", loadLevelString, 256);
+		ImGui::InputText("File Name", imguiLoadLevel, 256);
 		if (ImGui::Button("Cancel"))
 		{
-			strcpy_s(loadLevelString, "");
+			strcpy_s(imguiLoadLevel, "");
 			ImGui::CloseCurrentPopup();
 		}
 		ImGui::SameLine();
 		if (ImGui::Button("Load"))
 		{
-			game.loadLevel(loadLevelString);
-			strcpy_s(loadLevelString, "");
+			game.loadLevel(imguiLoadLevel);
+			strcpy_s(imguiLoadLevel, "");
+			ImGui::CloseCurrentPopup();
+		}
+		ImGui::EndPopup();
+	}
+	if (ImGui::Button("Create experiment"))
+	{
+		ImGui::OpenPopup("Create experiment");
+	}
+	if (ImGui::BeginPopup("Create experiment"))
+	{
+		ImGui::InputText("File Name", imguiCreateExperiment, 256);
+		ImGui::InputInt("Population size", &imguiPopulationSize);
+		ImGui::InputFloat("Weight mutation rate", &imguiWeightMutationRate);
+		ImGui::InputFloat("Weight mutation intensity", &imguiWeightMutationIntensity);
+		ImGui::InputFloat("Weight disable rate", &imguiWeightDisableRate);
+		ImGui::InputFloat("Add weight mutation rate", &imguiAddWeightMutationRate);
+		ImGui::InputFloat("Add node mutation rate", &imguiAddNodeMutationRate);
+		ImGui::InputFloat("c1", &imguiC1);
+		ImGui::InputFloat("c3", &imguiC3);
+		ImGui::InputFloat("Speciation difference", &imguiSpeciationDifference);
+		ImGui::InputText("Level file", imguiLevelFile, 256);
+		ImGui::Checkbox("End experiment on level finish", &imguiEndOnLevelFinish);
+		if (!imguiEndOnLevelFinish)
+			ImGui::InputInt("Stop after generation number", &imguiStopAfterGeneration);
+		ImGui::Checkbox("Save final population", &imguiSaveFinalPopulation);
+		ImGui::Checkbox("Save course of average fitness", &imguiSaveAverageFitnessCourse);
+		ImGui::Checkbox("Save course of champion fitness", &imguiSaveChampionFitnessCourse);
+		ImGui::InputText("Result file", imguiResultFile, 256);
+
+		if (ImGui::Button("Cancel"))
+		{
+			ImGui::CloseCurrentPopup();
+		}
+		ImGui::SameLine();
+		if (ImGui::Button("Create"))
+		{
+			createExperiment(
+				imguiCreateExperiment,
+				imguiPopulationSize,
+				imguiWeightMutationRate,
+				imguiWeightMutationIntensity,
+				imguiWeightDisableRate,
+				imguiAddWeightMutationRate,
+				imguiAddNodeMutationRate,
+				imguiC1,
+				imguiC3,
+				imguiSpeciationDifference,
+				imguiLevelFile,
+				imguiEndOnLevelFinish,
+				imguiStopAfterGeneration,
+				imguiSaveFinalPopulation,
+				imguiSaveAverageFitnessCourse,
+				imguiSaveChampionFitnessCourse,
+				imguiResultFile);
+			ImGui::CloseCurrentPopup();
+		}
+		ImGui::EndPopup();
+	}
+	ImGui::SameLine();
+	if (ImGui::Button("Load experiment"))
+	{
+		ImGui::OpenPopup("Load experiment");
+	}
+	if (ImGui::BeginPopup("Load experiment"))
+	{
+		ImGui::InputText("File Name", imguiLoadExperiment, 256);
+		if (ImGui::Button("Cancel"))
+		{
+			strcpy_s(imguiLoadExperiment, "");
+			ImGui::CloseCurrentPopup();
+		}
+		ImGui::SameLine();
+		if (ImGui::Button("Load"))
+		{
+			loadExperiment(imguiLoadExperiment);
+			strcpy_s(imguiLoadExperiment, "");
 			ImGui::CloseCurrentPopup();
 		}
 		ImGui::EndPopup();
@@ -262,4 +333,42 @@ void NEATApplication::stop()
 {
 	done = true;
 	window.close();
+}
+
+void NEATApplication::loadPopulation(std::string file)
+{
+	pugi::xml_document doc;
+	doc.load_file(file.c_str());
+	createPopulation(doc.child("population").attribute("nnetworkCount").as_int());
+	population->loadNetworks(file);
+	game.setPopulation(population, &actors);
+	game.restartLevel(false);
+}
+
+void NEATApplication::loadExperiment(std::string file)
+{
+
+}
+
+void NEATApplication::createExperiment(
+	std::string file,
+	int populationSize,
+	float weightMutationRate,
+	float weightMutationIntensity,
+	float weightDisableRate,
+	float addWeightMutationRate,
+	float addNodeMutationRate,
+	float c1,
+	float c3,
+	float speciationDifference,
+	std::string levelFile,
+	bool endOnLevelFinish,
+	//only if false
+	int stopAfterGeneration,
+	bool saveFinalPopulation,
+	bool saveAverageFitnessCourse,
+	bool saveChampionFitnessCourse,
+	std::string resultFile)
+{
+
 }

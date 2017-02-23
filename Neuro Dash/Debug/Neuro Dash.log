@@ -1,3 +1,18 @@
-﻿  NEATApplication.cpp
+﻿  Population.cpp
+f:\code\c++\neuro dash\neuro dash\neat\population.cpp(22): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
+f:\code\c++\neuro dash\neuro dash\neat\population.cpp(37): warning C4244: "Initialisierung": Konvertierung von "double" in "float", möglicher Datenverlust
+f:\code\c++\neuro dash\neuro dash\neat\population.cpp(118): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+f:\code\c++\neuro dash\neuro dash\neat\population.cpp(119): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+f:\code\c++\neuro dash\neuro dash\neat\population.cpp(140): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+f:\code\c++\neuro dash\neuro dash\neat\population.cpp(214): warning C4244: "+=": Konvertierung von "double" in "float", möglicher Datenverlust
+f:\code\c++\neuro dash\neuro dash\neat\population.cpp(278): warning C4244: "Argument": Konvertierung von "double" in "float", möglicher Datenverlust
+f:\code\c++\neuro dash\neuro dash\neat\population.cpp(327): warning C4244: "Argument": Konvertierung von "double" in "float", möglicher Datenverlust
+f:\code\c++\neuro dash\neuro dash\neat\population.cpp(333): warning C4244: "Argument": Konvertierung von "double" in "float", möglicher Datenverlust
+  StopWatch.cpp
+  NEATApplication.cpp
+  Code wird generiert...
+  Kompilieren...
+  main.cpp
+  Code wird generiert...
   Neuro Dash.vcxproj -> F:\Code\C++\Neuro Dash\Debug\Neuro Dash.exe
   Neuro Dash.vcxproj -> F:\Code\C++\Neuro Dash\Debug\Neuro Dash.pdb (Partial PDB)
