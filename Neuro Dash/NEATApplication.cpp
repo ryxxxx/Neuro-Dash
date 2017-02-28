@@ -32,7 +32,6 @@ void NEATApplication::run()
 			drawingTimeClock.restart();
 		}
 	}
-#
 	ImGui::SFML::Shutdown();
 	deletePopulation();
 }
