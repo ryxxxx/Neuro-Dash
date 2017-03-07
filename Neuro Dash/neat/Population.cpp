@@ -380,6 +380,17 @@ void Population::saveNetworks(std::string file)
 	populationNode.append_attribute("speciationDifference").set_value(speciationDifference);
 	populationNode.append_attribute("weight_innovation").set_value(weight_innovation);
 	populationNode.append_attribute("node_innovation").set_value(node_innovation);
+	float maxFitness = -1.f;
+	Neural::NNetwork* bestNet = nullptr;
+	for (auto& i : (*nets))
+	{
+		if (i->getActor()->getFitness() > maxFitness)
+		{
+			maxFitness = i->getActor()->getFitness();
+			bestNet = i;
+		}
+
+	}
 	for (auto & i : (*nets))
 	{
 		pugi::xml_node currentNet = populationNode.append_child("nnetwork");
@@ -400,7 +411,11 @@ void Population::saveNetworks(std::string file)
 			weight.append_attribute("weight").set_value(j.getWeight());
 			weight.append_attribute("enabled").set_value(j.isEnabled());
 		}
-
+		currentNet.append_attribute("fitness").set_value(i->getActor()->getFitness());
+		if (i == bestNet)
+		{
+			currentNet.append_attribute("champion").set_value(true);
+		}
 	}
 
 	doc.save_file(file.c_str());

@@ -237,7 +237,7 @@ void NEATApplication::handleGui()
 		}
 		ImGui::EndPopup();
 	}
-	if (ImGui::Button("Create experiment"))
+	/*if (ImGui::Button("Create experiment"))
 	{
 		ImGui::OpenPopup("Create experiment");
 	}
@@ -312,7 +312,7 @@ void NEATApplication::handleGui()
 			ImGui::CloseCurrentPopup();
 		}
 		ImGui::EndPopup();
-	}
+	}*/
 	ImGui::End();
 }
 

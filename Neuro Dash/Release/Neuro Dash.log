@@ -1,10 +1,17 @@
-﻿  Game.cpp
-  NEATApplication.cpp
-  main.cpp
+﻿  Population.cpp
+neat\Population.cpp(22): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
+neat\Population.cpp(37): warning C4244: "Initialisierung": Konvertierung von "double" in "float", möglicher Datenverlust
+neat\Population.cpp(118): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+neat\Population.cpp(119): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+neat\Population.cpp(140): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
+neat\Population.cpp(214): warning C4244: "+=": Konvertierung von "double" in "float", möglicher Datenverlust
+neat\Population.cpp(278): warning C4244: "Argument": Konvertierung von "double" in "float", möglicher Datenverlust
+neat\Population.cpp(327): warning C4244: "Argument": Konvertierung von "double" in "float", möglicher Datenverlust
+neat\Population.cpp(333): warning C4244: "Argument": Konvertierung von "double" in "float", möglicher Datenverlust
   Code wird generiert.
-  35 of 2881 functions ( 1.2%) were compiled, the rest were copied from previous compilation.
+  154 of 2878 functions ( 5.4%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    34 functions had inline decision re-evaluated but remain unchanged
   Codegenerierung ist abgeschlossen.
   Neuro Dash.vcxproj -> F:\Code\C++\Neuro Dash\Release\Neuro Dash.exe
   Neuro Dash.vcxproj -> F:\Code\C++\Neuro Dash\Release\Neuro Dash.pdb (Full PDB)
