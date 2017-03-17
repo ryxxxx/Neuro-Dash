@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<generations>
 <gen num="1" averageFitness="206.333328" bestFitness="218" worstFitness="193.5" />
 <gen num="2" averageFitness="215.550003" bestFitness="218" worstFitness="193.5" />
 <gen num="3" averageFitness="211.875" bestFitness="218" worstFitness="193.5" />
@@ -3252,3 +3253,4 @@
 <gen num="3251" averageFitness="1088.33337" bestFitness="3809" worstFitness="193.5" />
 <gen num="3252" averageFitness="898.657898" bestFitness="3809" worstFitness="218" />
 <gen num="3253" averageFitness="1180.5" bestFitness="3809" worstFitness="193.5" />
+</generations>
