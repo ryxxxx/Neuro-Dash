@@ -29,8 +29,9 @@ namespace NEAT
 			void printGeneration();
 			void saveNetworks(std::string);
 			void loadNetworks(std::string);
-			float getPopulationFitness() { return currentPopulationFitness; };
-			float getMaxChampFitness() { return currentMaxChampFitness; };
+			float getPopulationFitnessAvg() { return currentPopulationFitnessAvg; };
+			float getChampionFitness() { return currentBestActorFitness; };
+			float getWorstFitness() { return currentWorstActorFitness; };
 			int getSpeciesCount() { return speciesCount; };
 
 			std::list<Neural::Actor*> *getActors() { return actors; }
@@ -50,7 +51,7 @@ namespace NEAT
 			int weight_innovation;
 			int node_innovation;
 
-			float currentMaxChampFitness, currentPopulationFitness;
+			float currentBestActorFitness, currentPopulationFitnessAvg, currentWorstActorFitness;
 			int speciesCount;
 	};
 }

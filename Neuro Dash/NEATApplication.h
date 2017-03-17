@@ -31,6 +31,8 @@ private:
 	NEAT::Population* population;
 	std::list<PlayerActor*> actors;
 	sf::RenderWindow window;
+	std::vector<std::vector<float>> NgenFavgFbestFworst;
+	int lastgen = 0;
 
 	void handleEvents();
 	void handleGui();
@@ -60,6 +62,7 @@ private:
 		bool saveChampionFitnessCourse,
 		std::string resultFile);
 
+		char imguiSaveProgressionCurve[256] = "";
 		char imguiSavePopulation[256] = "";
 		char imguiLoadPopulation[256] = "";
 		char imguiLoadLevel[256] = "";

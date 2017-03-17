@@ -100,7 +100,10 @@ void Game::draw(sf::RenderWindow& window)
 void Game::restartLevel(bool evolveNetwork)
 {
 	if (evolveNetwork)
+	{
 		population->stepGeneration(false);
+		generation++;
+	}
 	for (auto& i : (*actors))
 	{
 		i->setPlayer(new Player(currentLevel.getSpawnpoint()));

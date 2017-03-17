@@ -99,14 +99,20 @@ void Population::stepGeneration(bool verbose)
 			species.front().push_front(*it);
 		}
 	}
-
+	float totalFitness = 0;
+	int actorCount = 0;
+	currentWorstActorFitness = (*species.begin()->begin())->getActor()->getFitness();
 	for(list<list<NNetwork*> >::iterator it = species.begin(); it != species.end(); it++) {
 		for(list<NNetwork*>::iterator it2 = (*it).begin();
 																		it2 != (*it).end();
 																		it2++) {
+			actorCount += 1;
+			totalFitness += (*it2)->getActor()->getFitness();
 			fitnessSum += (*it2)->getActor()->getFitness() / (*it).size();
 			if((*it2)->getActor()->getFitness() > champion)
 				champion = (*it2)->getActor()->getFitness();
+			if((*it2)->getActor()->getFitness() < currentWorstActorFitness)
+				currentWorstActorFitness = (*it2)->getActor()->getFitness();
 		}
 	}
 
@@ -114,9 +120,8 @@ void Population::stepGeneration(bool verbose)
 		printf("Total fitness %f\tChampion:\t%f\n", fitnessSum, champion);
 		printf("Number of species this generation: %d\n", (int) species.size());
 	}
-	if (currentMaxChampFitness < champion)
-		currentMaxChampFitness = champion;
-	currentPopulationFitness = fitnessSum;
+	currentBestActorFitness = champion;
+	currentPopulationFitnessAvg = totalFitness / actorCount;
 	speciesCount = static_cast<int>(species.size());
 
 	//Build the next generation		

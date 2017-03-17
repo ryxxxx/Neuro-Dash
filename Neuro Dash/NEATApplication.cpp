@@ -87,6 +87,11 @@ void NEATApplication::handleEvents()
 void NEATApplication::updateGame()
 {
 	game.update();
+	if(game.getGeneration()!=lastgen)
+	{
+		lastgen = game.getGeneration();
+		NgenFavgFbestFworst.push_back(std::vector<float>{(float)game.getGeneration(), population->getPopulationFitnessAvg(), population->getChampionFitness(), population->getWorstFitness()});
+	}
 	if (game.isDone())
 	{
 		if (pauseOnFinish)
@@ -103,9 +108,9 @@ void NEATApplication::handleGui()
 	ImGui::Begin("Controls:");
 	std::string timeDisplay = "Current time in seconds: " + std::to_string(timeSinceExperimentStarted.getTime());
 	ImGui::Text(timeDisplay.c_str());
-	std::string maxChampFitness = "Current max champ Fitness: " + std::to_string(population->getMaxChampFitness());
+	std::string maxChampFitness = "Current max champ Fitness: " + std::to_string(population->getChampionFitness());
 	ImGui::Text(maxChampFitness.c_str());
-	std::string maxPopFitness = "Last population Fitness (may update slower than the game): " + std::to_string(population->getPopulationFitness());
+	std::string maxPopFitness = "Last population Fitness (may update slower than the game): " + std::to_string(population->getPopulationFitnessAvg());
 	ImGui::Text(maxPopFitness.c_str());
 	std::string speciesCount = "Current species count: " + std::to_string(population->getSpeciesCount());
 	ImGui::Text(speciesCount.c_str());
@@ -235,6 +240,37 @@ void NEATApplication::handleGui()
 			strcpy_s(imguiLoadLevel, "");
 			ImGui::CloseCurrentPopup();
 		}
+		ImGui::EndPopup();
+	}
+	if (ImGui::Button("Save progessioncurve"))
+	{
+		ImGui::OpenPopup("Save progessioncurve");
+	}
+	if (ImGui::BeginPopup("Save progessioncurve"))
+	{
+		ImGui::InputText("File Name", imguiSaveProgressionCurve, 256);
+		if (ImGui::Button("Cancel"))
+		{
+			ImGui::CloseCurrentPopup();
+			strcpy_s(imguiSaveProgressionCurve, "");
+		}
+		ImGui::SameLine();
+		if (ImGui::Button("Save"))
+		{
+			pugi::xml_document doc;
+			for (auto &i : NgenFavgFbestFworst)
+			{
+				pugi::xml_node genNode = doc.append_child("gen");
+				genNode.append_attribute("num").set_value(i[0]);
+				genNode.append_attribute("averageFitness").set_value(i[1]);
+				genNode.append_attribute("bestFitness").set_value(i[2]);
+				genNode.append_attribute("worstFitness").set_value(i[3]);
+			}
+			doc.save_file(imguiSaveProgressionCurve);
+			ImGui::CloseCurrentPopup();
+			strcpy_s(imguiSaveProgressionCurve, "");
+		}
+
 		ImGui::EndPopup();
 	}
 	/*if (ImGui::Button("Create experiment"))

@@ -18,6 +18,7 @@ public:
 	void setDone(bool _done) { done = _done; restartNextUpdate = true; };
 	void updateManualPlayer();
 	void loadLevel(std::string);
+	int getGeneration() { return generation; };
 private:
 	Level currentLevel;
 	sf::View playerView;
@@ -26,4 +27,5 @@ private:
 	bool done = false;
 	Player* manualPlayer;
 	bool restartNextUpdate = false;
+	int generation = 0;
 };
